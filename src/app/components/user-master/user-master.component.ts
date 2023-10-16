@@ -72,6 +72,8 @@ export class UserMasterComponent implements OnInit, AfterViewInit {
   ngAfterViewInit(): void {
   }
   getLoginUserdetail(){
+    // alert("user details");
+    debugger;
     for (let i = 0; i < JSON.parse(sessionStorage.getItem("authTeacherDetails"))?.applicationDetails.length; i++) {
       console.log(JSON.parse(sessionStorage.getItem("authTeacherDetails")));
       this.loginUsername=JSON.parse(sessionStorage.getItem("authTeacherDetails"))?.applicationDetails[i].firstname + " "+ JSON.parse(sessionStorage.getItem("authTeacherDetails"))?.applicationDetails[i].lastname;
@@ -91,6 +93,7 @@ export class UserMasterComponent implements OnInit, AfterViewInit {
 
   //**********************   Logic for get  Data from Api  ******************************
   getChilduser() {
+    // alert("get Child user");
     debugger
      this.childUserList = [];
      const data = {
