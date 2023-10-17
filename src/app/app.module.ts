@@ -87,6 +87,7 @@ import { ForgetPasswordComponent } from './forget-password/forget-password.compo
 import { ResetPasswordComponent } from './reset-password/reset-password.component';
 import { UserMasterComponent } from './components/user-master/user-master.component';
 import { AddInstituteHeadComponent } from './components/add-institute-head/add-institute-head.component';
+import { ControlerMasterComponent } from './components/controler-master/controler-master.component';
 // import { MAT_DATE_FORMATS } from '@angular/material/';
 // import { DatePickerModule } from 'angular-material-datepicker';
 
@@ -166,7 +167,8 @@ import { AddInstituteHeadComponent } from './components/add-institute-head/add-i
     ForgetPasswordComponent,
     ResetPasswordComponent,
     UserMasterComponent,
-    AddInstituteHeadComponent
+    AddInstituteHeadComponent,
+    ControlerMasterComponent
    
     
   ],

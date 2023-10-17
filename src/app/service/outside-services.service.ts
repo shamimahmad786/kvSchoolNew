@@ -1551,7 +1551,8 @@ schoolTransferVerify(data:any){
   return this._http.post(environment.BASE_URL_DATA_TRANSFER+ "schoolTransferVerify",data,{headers})
 }
 getChilduserList(data:any,userName:any){
-  var token = JSON.parse(sessionStorage.getItem('authTeacherDetails'))?.refreshToken
+  // alert("child API");
+  var token = JSON.parse(sessionStorage.getItem('authTeacherDetails'))?.token
   var headers = new HttpHeaders({
     'Authorization':token,
     'username':userName,
@@ -1561,7 +1562,7 @@ getChilduserList(data:any,userName:any){
 }
 
 childActiveDeactiveAction(data:any, userName:any){
-  var token = JSON.parse(sessionStorage.getItem('authTeacherDetails'))?.refreshToken
+  var token = JSON.parse(sessionStorage.getItem('authTeacherDetails'))?.token
   var headers = new HttpHeaders({
     'Authorization':token,
     'username':userName,
@@ -1570,7 +1571,7 @@ childActiveDeactiveAction(data:any, userName:any){
   return this._http.post(environment.BASE_URL_DATA_USERMANAGEMENT+ "updateUser",data,{headers})
 }
 createInstitutionUser(data:any,userName:any){
-  var token = JSON.parse(sessionStorage.getItem('authTeacherDetails'))?.refreshToken
+  var token = JSON.parse(sessionStorage.getItem('authTeacherDetails'))?.token
   var headers = new HttpHeaders({
     'Authorization':token,
     'username':userName,
